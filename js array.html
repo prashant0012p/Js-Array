@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Array</title>
+
+
+
+</head>
+
+<body>
+
+
+    <h2>JavaScript Array</h2>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <script>
+
+        // const car = ["<ul>"+"<li>","BMW","</li>"+"</ul>","<ul>"+"<li>","Audi","</li>"+"</ul>","<ul>"+"<li>","Scoda","</li>"+"</ul>","<ul>"+"<li>","Benz","</li>"+"</ul>"]
+
+
+        // const car = ["BMW", "Audi", "Scoda", "Benz"]
+
+
+
+        // for (cars of car) {
+        //     document.write("<ul>", "<li>" + cars + "</ul>", "</li>")
+
+        // }
+
+
+
+
+
+            //Creating an array
+
+
+            const cars = ["BMW", "Audi", "Scoda", "Benz","Aston martin"];
+
+
+
+            let txt = "<ul>";
+            cars.forEach(myFunc);//Looping the Array
+            txt += "</ul>";
+
+
+
+            document.getElementById("demo").innerHTML = txt;
+
+            function myFunc(element) {
+                txt += "<li>" + element + "</li>";
+            }
+
+       
+         
+
+         
+
+
+    </script>
+</body>
+
+</html>
